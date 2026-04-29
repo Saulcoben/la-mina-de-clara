@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mina de Clara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>La Mina de Clara</h1>
+            <div id="stats">
+                <div class="stat"><span class="icon">🪙</span> Oro: <span id="gold-display">0</span></div>
+                <div class="stat"><span class="icon">💎</span> Gemas: <span id="gem-display">0</span></div>
+                <div class="stat-small">Oro por seg: <span id="gps-display">0</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div id="mining-area">
+                <div id="mine-target" class="rock-idle">
+                    <!-- The main clickable rock -->
+                </div>
+            </div>
+
+            <div id="shop-area">
+                <h2>Mejoras</h2>
+                
+                <button id="upgrade-pickaxe" class="shop-btn">
+                    <span class="btn-title">Mejorar Pico</span>
+                    <span class="btn-desc">+1 Oro por clic</span>
+                    <span class="btn-cost">Costo: <span id="cost-pickaxe">10</span> Oro</span>
+                </button>
+
+                <h2>Automatización</h2>
+                
+                <button id="buy-miner" class="shop-btn">
+                    <span class="btn-title">Minero Novato</span>
+                    <span class="btn-desc">+1 Oro por seg</span>
+                    <span class="btn-cost">Costo: <span id="cost-miner">50</span> Oro</span>
+                </button>
+                
+                <button id="buy-drill" class="shop-btn">
+                    <span class="btn-title">Taladro Eléctrico</span>
+                    <span class="btn-desc">+10 Oro por seg</span>
+                    <span class="btn-cost">Costo: <span id="cost-drill">500</span> Oro</span>
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <button id="reset-btn" class="danger-btn">Borrar Progreso</button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
